@@ -59,6 +59,11 @@ export default function Homepage() {
   const data = useLoaderData<typeof loader>();
   return (
     <div className="home">
+      <section style={{padding: '1rem'}}>
+        <h2>Yawanawá Tribe-Led Flagship</h2>
+        <p>Visit the full multi-page sovereign commerce experience.</p>
+        <Link to="/yawanawa">Open Yawanawá digital flagship</Link>
+      </section>
       <FeaturedCollection collection={data.featuredCollection} />
       <RecommendedProducts products={data.recommendedProducts} />
     </div>
